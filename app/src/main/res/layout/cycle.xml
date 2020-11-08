@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--  Cycle  -->
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="@dimen/_120sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp">
+
+        <RelativeLayout
+            android:background="@drawable/bg_gradiant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/ly_sys"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Sys"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/raleway"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="129"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/raleway"
+                            android:textSize="@dimen/_35ssp"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="mmHg"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/raleway"
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_dia"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/ly_sys"
+                    android:layout_toEndOf="@+id/ly_sys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:text="Dia"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_10ssp" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="82"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/raleway"
+                            android:textSize="@dimen/_35ssp"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="mmHg"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/raleway"
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_heart"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/ly_dia"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:src="@drawable/ic_heart_24"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"/>
+                    <TextView
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="88"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/raleway"
+                        android:textSize="@dimen/_20ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="BPM"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/raleway"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
